@@ -3,151 +3,213 @@
 <title>W3.CSS Template</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 <head>
-  <script>
-    function sendAlert() {
-      alert("Your message was sent. Thank you.");
-  }
-  </script>
+    <script>
+        function sendAlert() {
+            alert("Your message was sent. Thank you.");
+        }
+    </script>
 </head>
 <style>
-body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", Arial, Helvetica, sans-serif}
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: "Raleway", Arial, Helvetica, sans-serif
+    }
 </style>
+
 <body class="w3-light-grey">
 
-<!-- Navigation Bar -->
-<div class="w3-bar w3-white w3-large">
-  <a href="#" class="w3-bar-item w3-button w3-red w3-mobile"><i class="fa fa-paw w3-margin-right"></i>Food for all</a>
-  <a href="./index.html" class="w3-bar-item w3-button w3-mobile">Home</a>
-  <a href="about.html" class="w3-bar-item w3-button w3-mobile">About</a>
+    <!-- Navigation Bar -->
+    <div class="w3-bar w3-white w3-large">
+        <a href="#" class="w3-bar-item w3-button w3-red w3-mobile">
+            <i class="fa fa-paw w3-margin-right"></i>Food for all</a>
+        <a href="./index.html" class="w3-bar-item w3-button w3-mobile">Home</a>
+        <a href="about.html" class="w3-bar-item w3-button w3-mobile">About</a>
 
-</div>
-<!-- Header -->
-<header class="w3-display-container w3-content" style="max-width:1500px;">
-  <img class="w3-image" src="./assets/petlifeacademy.jpg" alt="Pets" style="min-width:1000px" width="1500" height="800">
-  <div class="w3-display-left w3-padding w3-col l6 m8" />
-</header>
-
-<!-- Page content -->
-<div class="w3-content" style="max-width:1532px;">
-
-
-  <div class="w3-display-container w3-content" style="max-width:1500px; w3-container w3-margin-top " id="register">
-
-    <div class="justify-content-md-center w3-container w3-red">
-      <h2><i class="fa fa-user-plus w3-margin-right"></i>Register</h2>
     </div>
-    <div class="col-md-auto">
-    <div class="w3-container w3-white" style="padding-left:90px; padding-right:90px; padding-top:16px; padding-bottom:16px">
-      <form action="/action_page.php" target="_blank">
-        <div class="w3-row-padding" style="margin:0  -16px;">
-           <div class="w3-half w3-margin-bottom">
-            <label><i class="fa fa-male"></i> Username</label>
-            <input class="w3-input w3-border" type="text" placeholder= "username" name="username" >
-          </div>
-           <div class="w3-half w3-margin-bottom">
-            <label><i class="fa fa-envelope"></i> Email</label>
-            <input class="w3-input w3-border" type="email" placeholder="example@gmail.com" name="email" >
-          </div>
-        </div>
-        <div class="w3-row-padding" style="margin:8px -16px;">
+    <!-- Header -->
+    <header class="w3-display-container w3-content" style="max-width:1500px;">
+        <img class="w3-image" src="./assets/petlifeacademy.jpg" alt="Pets" style="min-width:1000px" width="1500" height="800">
+        <div class="w3-display-left w3-padding w3-col l6 m8" />
+    </header>
 
-          <div class="w3-half">
-            <label><i class="fa fa-building"></i> City</label>
-          <select class="w3-input w3-border">
-              <option value="0">Select a city</option>
-            <option value="1">Beograd</option>
-            <option value="2">Novi Sad</option>
-            <option value="3">Niš</option>
-            <option value="4">Kragujevac</option>
-            <option value="5">Ćuprija</option>
-            <option value="6">Topola</option>
-        </select>
-          </div>
-            <div class="w3-half w3-margin-bottom">
-            <label><i class="fa fa-road"></i> Street</label>
-            <input class="w3-input w3-border" type="text" placeholder="street" name="street" >
-          </div>
-        </div>
-             <div class="w3-row-padding" style="margin:8px -16px;">
+    <!-- Page content -->
+    <div class="w3-content" style="max-width:1532px;">
 
-          <div class="w3-half">
-            <label><i class="fa fa-map-marker"></i> Number</label>
-          <input class="w3-input w3-border" type="text" placeholder="13b" name="number" >
-          </div>
-                 <div class="w3-half">
-            <label><i class="fa fa-key"></i> Password</label>
-          <input class="w3-input w3-border" type="password" placeholder="password" name="password">
-          </div>
-        </div>
-              <div id ="userRow" class="w3-row-padding" style="margin:8px -16px;">
 
-           <div class="w3-half">
-        <label><i class="fa fa-paw"></i> Pet</label>
-          <select class="w3-input w3-border">
-                <option value="0">Select a pet</option>
-            <option value="1">Dog</option>
-            <option value="2">Cat</option>
-            <option value="3">Hamster</option>
-            <option value="4">Parrot</option>
-            <option value="5">Rabbit</option>
+        <div class="w3-display-container w3-content" style="max-width:1500px; w3-container w3-margin-top " id="register">
 
-        </select>
-          </div>
-                 <div class="w3-half">
-            <label><i class="fa fa-cubes"></i> Number of pets</label>
-          <input class="w3-input w3-border" type="number" value="1" name="petNumber" min="1" max="5">
-          </div>
+            <div class="justify-content-md-center w3-container w3-red">
+                <h2>
+                    <i class="fa fa-user-plus w3-margin-right"></i>Register</h2>
+            </div>
+            <div class="col-md-auto">
+                <div class="w3-container w3-white" style="padding-left:90px; padding-right:90px; padding-top:16px; padding-bottom:16px">
+                    <form action="/action_page.php" target="_blank">
+                        <div class="w3-row-padding" style="margin:0  -16px;">
+                            <div class="w3-half w3-margin-bottom">
+                                <label>
+                                    <i class="fa fa-male"></i> Name/Company name</label>
+                                <input class="w3-input w3-border" type="text" placeholder="username" name="username">
+                            </div>
+                            <div class="w3-half w3-margin-bottom">
+                                <label>
+                                    <i class="fa fa-envelope"></i> Email</label>
+                                <input class="w3-input w3-border" type="email" placeholder="example@gmail.com" name="email">
+                            </div>
+                        </div>
+
+                        <div class="w3-row-padding" style="margin:8px -16px;">
+                            <div class="w3-half">
+                                <label>
+                                    <i class="fa fa-key"></i> Password</label>
+                                <input class="w3-input w3-border" type="password" placeholder="password" name="password">
+                            </div>
+                            <div class="w3-half">
+                                <label>
+                                    <i class="fa fa-phone"></i> Phone number</label>
+                                <input class="w3-input w3-border" type="text" placeholder="011/1234567" name="phoneNumber">
+                            </div>
+
+                        </div>
+
+                        <div class="w3-row-padding" style="margin:8px -16px;">
+
+                            <div class="w3-half w3-margin-bottom">
+                                <label>
+                                    <i class="fa fa-flag"></i> Country</label>
+                                <input class="w3-input w3-border" type="text" value="Srbija" name="country">
+                            </div>
+                            <div class="w3-half">
+                                <label>
+                                    <i class="fa fa-building"></i> City</label>
+                                <select class="w3-input w3-border">
+                                    <option value="0">Select a city</option>
+                                    <option value="1">Beograd</option>
+                                    <option value="2">Novi Sad</option>
+                                    <option value="3">Niš</option>
+                                    <option value="4">Kragujevac</option>
+                                    <option value="5">Ćuprija</option>
+                                    <option value="6">Topola</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="w3-row-padding" style="margin:8px -16px;">
+
+                            <div class="w3-half w3-margin-bottom">
+                                <label>
+                                    <i class="fa fa-road"></i> Street</label>
+                                <input class="w3-input w3-border" type="text" placeholder="street" name="street">
+                            </div>
+                            <div class="w3-half">
+                                <label>
+                                    <i class="fa fa-map-marker"></i> Number</label>
+                                <input class="w3-input w3-border" type="text" placeholder="13b" name="number">
+                            </div>
+                        </div>
+                        <div class="w3-row-padding" style="margin:8px -16px;">
+
+                            <div class="w3-half w3-margin-bottom">
+                                <label>
+                                    <!-- <i class="fa fa-road"></i> Type </label> -->
+                                    <input class="w3-radio w3-border" type="radio" name="rbRole" onclick="show('userType')" id="rolePetShop" value="petShop"> Pet shop
+                                    <input class="w3-radio w3-border" type="radio" name="rbRole" onclick="show('userType')" id="roleUser" value="user"> User
+                            </div>
+                        </div>
+
+                        <div id="userType" style="visibility:hidden">
+                            <div id="userRow" class="w3-row-padding" style="margin:8px -16px;">
+
+                                <div class="w3-half">
+                                    <label>
+                                        <i class="fa fa-paw"></i> Pet</label>
+                                    <select class="w3-input w3-border">
+                                        <option value="0">Select a pet</option>
+                                        <option value="1">Dog</option>
+                                        <option value="2">Cat</option>
+                                    </select>
+                                </div>
+                                <div class="w3-half">
+                                    <label>
+                                        <i class="fa fa-cubes"></i> Number of pets</label>
+                                    <input class="w3-input w3-border" type="number" value="1" name="petNumber" min="1" max="5">
+                                </div>
+                            </div>
+                        </div>
+                        <button class="w3-button w3-dark-grey" type="submit"> Register </button>
+                    </form>
+                </div>
+            </div>
         </div>
-        <button class="w3-button w3-dark-grey" type="submit"> Register </button>
-      </form>
+
+        <div class="w3-row w3-large w3-center" style="margin:32px 0">
+            <div class="w3-third">
+                <i class="fa fa-map-marker w3-text-red"></i> 28 Bulevar Kralja Aleksandra, Belgrade, Serbia</div>
+            <div class="w3-third">
+                <i class="fa fa-phone w3-text-red"></i> Phone: +381 11 012345</div>
+            <div class="w3-third">
+                <i class="fa fa-envelope w3-text-red"></i> Email: info@foodforall.rs</div>
+        </div>
+
+        <div class="w3-panel w3-red w3-leftbar w3-padding-32">
+            <h6>
+                <i class="fa fa-info w3-deep-orange w3-padding w3-margin-right"></i> If you wish to help, feel free to contact us</h6>
+        </div>
+
+        <div class="w3-container" id="contact">
+            <h2>Contact</h2>
+            <p>If you have any questions, do not hesitate to ask.</p>
+            <i class="fa fa-map-marker w3-text-red" style="width:30px"></i> Belgrade, Serbia
+            <br>
+            <i class="fa fa-phone w3-text-red" style="width:30px"></i> Phone: +381 11 012345
+            <br>
+            <i class="fa fa-envelope w3-text-red" style="width:30px"> </i> Email: info@foodforall.rs
+            <br>
+            <form action="sendAlert()" target="_blank">
+                <p>
+                    <input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name">
+                </p>
+                <p>
+                    <input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Email" required name="Email">
+                </p>
+                <p>
+                    <input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message" required name="Message">
+                </p>
+                <p>
+                    <button class="w3-button w3-black w3-padding-large" onClick="sendAlert()">SEND MESSAGE</button>
+                </p>
+            </form>
+        </div>
+
+        <!-- End page content -->
     </div>
-    </div>
-  </div>
 
-  <div class="w3-row w3-large w3-center" style="margin:32px 0">
-    <div class="w3-third"><i class="fa fa-map-marker w3-text-red"></i> 28 Bulevar Kralja Aleksandra, Belgrade, Serbia</div>
-    <div class="w3-third"><i class="fa fa-phone w3-text-red"></i> Phone: +381 11 012345</div>
-    <div class="w3-third"><i class="fa fa-envelope w3-text-red"></i> Email: info@foodforall.rs</div>
-  </div>
-
-  <div class="w3-panel w3-red w3-leftbar w3-padding-32">
-    <h6><i class="fa fa-info w3-deep-orange w3-padding w3-margin-right"></i> If you wish to help, feel free to contact us</h6>
-  </div>
-
-  <div class="w3-container" id="contact">
-    <h2>Contact</h2>
-    <p>If you have any questions, do not hesitate to ask.</p>
-    <i class="fa fa-map-marker w3-text-red" style="width:30px"></i> Belgrade, Serbia<br>
-    <i class="fa fa-phone w3-text-red" style="width:30px"></i> Phone: +381 11 012345<br>
-    <i class="fa fa-envelope w3-text-red" style="width:30px"> </i> Email: info@foodforall.rs<br>
-    <form action="sendAlert()" target="_blank">
-      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name"></p>
-      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Email" required name="Email"></p>
-      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message" required name="Message"></p>
-      <p><button class="w3-button w3-black w3-padding-large" onClick="sendAlert()">SEND MESSAGE</button></p>
-    </form>
-  </div>
-
-<!-- End page content -->
-</div>
-
-<!-- Footer -->
-<footer class="w3-padding-32 w3-black w3-center w3-margin-top">
-  <h5>Find Us On</h5>
-  <div class="w3-xlarge w3-padding-16">
-    <i class="fa fa-facebook-official w3-hover-opacity"></i>
-    <i class="fa fa-instagram w3-hover-opacity"></i>
-    <i class="fa fa-snapchat w3-hover-opacity"></i>
-    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-    <i class="fa fa-twitter w3-hover-opacity"></i>
-    <i class="fa fa-linkedin w3-hover-opacity"></i>
-  </div>
-  <p>Powered by Garfield team</p>
-</footer>
+    <!-- Footer -->
+    <footer class="w3-padding-32 w3-black w3-center w3-margin-top">
+        <h5>Find Us On</h5>
+        <div class="w3-xlarge w3-padding-16">
+            <i class="fa fa-facebook-official w3-hover-opacity"></i>
+            <i class="fa fa-instagram w3-hover-opacity"></i>
+            <i class="fa fa-snapchat w3-hover-opacity"></i>
+            <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+            <i class="fa fa-twitter w3-hover-opacity"></i>
+            <i class="fa fa-linkedin w3-hover-opacity"></i>
+        </div>
+        <p>Powered by Garfield team</p>
+    </footer>
 
 </body>
+<script src="js/functions.js"></script>
+
 </html>

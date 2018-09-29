@@ -26,6 +26,10 @@
       window.location.assign("./user.html");
     }
   }
+
+  function registerUser() {
+    window.location.assign("./register.html");
+  }
   </script>
 </head>
 <style>
@@ -60,7 +64,8 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", Arial, Helvetica, sans-serif}
             <input class="w3-input w3-border" type="password"  name="Password" id="password_id" required>
           </div>
         </div>
-        <button class="w3-button w3-dark-grey" onclick="loginUser()"> Login</button>
+        <button class="w3-button w3-dark-grey w3-half" onclick="loginUser()"> Login</button>
+        <button class="w3-button w3-dark-grey w3-half" onclick="registerUser()"> Register</button>
       </div>
     </div>
   </div>
