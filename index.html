@@ -15,6 +15,17 @@
   function reserveFood() {
     alert("Food reserved. Please pick it up within the next two hours.");
   }
+
+  function loginUser() {
+    var username = document.getElementById("username_id").value;
+    var password = document.getElementById('password_id').value;
+    console.log(username);
+    if (username === "petshop" && password === "password") {
+      window.location.assign("./petshop.html");
+    } else if (username === "user" && password === "password") {
+      window.location.assign("./user.html");
+    }
+  }
   </script>
 </head>
 <style>
@@ -36,7 +47,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", Arial, Helvetica, sans-serif}
       <h2><i class="fa fa-sign-in"></i> Login</h2>
     </div>
     <div class="w3-container w3-white w3-padding-small">
-      <form action="./petshop.html" target="./petshop.html">
+      <div>
         <div class="w3-row-padding">
           <div class="w3-margin-bottom">
             <label> Username</label>
@@ -49,8 +60,8 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", Arial, Helvetica, sans-serif}
             <input class="w3-input w3-border" type="password"  name="Password" id="password_id" required>
           </div>
         </div>
-        <button class="w3-button w3-dark-grey" type='submit'> Login</button>
-      </form>
+        <button class="w3-button w3-dark-grey" onclick="loginUser()"> Login</button>
+      </div>
     </div>
   </div>
 </header>
